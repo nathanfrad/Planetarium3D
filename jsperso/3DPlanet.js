@@ -9,15 +9,15 @@ function creaPlanets() {
     Moon.position.y = 2
     Moon.name = "Moon";
 
-    var radMoon = 0.5 ;
+    var radMoon = 0.5;
     var moonMesh = THREEx.Planets.createMoon(radMoon)
-    moonMesh.receiveShadow	= true
-    moonMesh.castShadow	= true
+    moonMesh.receiveShadow = true
+    moonMesh.castShadow = true
     moonMesh.geometry.radius = radMoon
 
     Moon.add(moonMesh)
-    Moon.scale.multiplyScalar(2/5)
-    objectsPlanets.push( Moon );
+    Moon.scale.multiplyScalar(2 / 5)
+    objectsPlanets.push(Moon);
 
     //Jupiter
     var Neptune = new THREE.Group();
@@ -26,15 +26,15 @@ function creaPlanets() {
     Neptune.position.y = 4
     Neptune.name = "Neptune";
 
-    var radNeptune = 0.5 ;
+    var radNeptune = 0.5;
     var neptuMesh = THREEx.Planets.createNeptune(radNeptune)
-    neptuMesh.receiveShadow	= true
-    neptuMesh.castShadow	= true
+    neptuMesh.receiveShadow = true
+    neptuMesh.castShadow = true
     neptuMesh.geometry.radius = radNeptune
 
     Neptune.add(neptuMesh)
-    Neptune.scale.multiplyScalar(2/5)
-    objectsPlanets.push( Neptune );
+    Neptune.scale.multiplyScalar(2 / 5)
+    objectsPlanets.push(Neptune);
 
 
     //Jupiter
@@ -43,17 +43,15 @@ function creaPlanets() {
     Jupiter.position.x = -6
     Jupiter.name = "Jupiter";
 
-    var radJupiter = 0.5 ;
+    var radJupiter = 0.5;
     var jupiMesh = THREEx.Planets.createJupiter(radJupiter)
-    jupiMesh.receiveShadow	= true
-    jupiMesh.castShadow	= true
+    jupiMesh.receiveShadow = true
+    jupiMesh.castShadow = true
     jupiMesh.geometry.radius = radJupiter
 
     Jupiter.add(jupiMesh)
-    Jupiter.scale.multiplyScalar(2/5)
-    objectsPlanets.push( Jupiter );
-
-
+    Jupiter.scale.multiplyScalar(2 / 5)
+    objectsPlanets.push(Jupiter);
 
 
     //Mercury
@@ -63,15 +61,15 @@ function creaPlanets() {
     Mercury.position.y = -3
     Mercury.name = "Mercury";
 
-    var radMercury = 0.5 ;
+    var radMercury = 0.5;
     var mercMesh = THREEx.Planets.createMercury(radMercury)
-    mercMesh.receiveShadow	= true
-    mercMesh.castShadow	= true
+    mercMesh.receiveShadow = true
+    mercMesh.castShadow = true
 
     mercMesh.geometry.radius = radMercury
     Mercury.add(mercMesh)
-    Mercury.scale.multiplyScalar(2/5)
-    objectsPlanets.push( Mercury );
+    Mercury.scale.multiplyScalar(2 / 5)
+    objectsPlanets.push(Mercury);
 
 
     //Venus
@@ -81,15 +79,15 @@ function creaPlanets() {
     Venus.position.y = 3
     Venus.name = "Venus";
 
-    var radVenus = 0.5 ;
+    var radVenus = 0.5;
     var venusMesh = THREEx.Planets.createVenus(radVenus)
-    venusMesh.receiveShadow	= true
-    venusMesh.castShadow	= true
+    venusMesh.receiveShadow = true
+    venusMesh.castShadow = true
 
     venusMesh.geometry.radius = radVenus
     Venus.add(venusMesh)
-    Venus.scale.multiplyScalar(2/5)
-    objectsPlanets.push( Venus );
+    Venus.scale.multiplyScalar(2 / 5)
+    objectsPlanets.push(Venus);
 
     //Mars
     var Mars = new THREE.Group();
@@ -98,18 +96,15 @@ function creaPlanets() {
     Mars.position.y = 5
     Mars.name = "Mars";
 
-    var radMars = 0.5 ;
+    var radMars = 0.5;
     var marsMesh = THREEx.Planets.createMars(radMars)
-    marsMesh.receiveShadow	= true
-    marsMesh.castShadow	= true
+    marsMesh.receiveShadow = true
+    marsMesh.castShadow = true
 
     marsMesh.geometry.radius = radMars
     Mars.add(marsMesh)
-    Mars.scale.multiplyScalar(2/5)
-    objectsPlanets.push( Mars );
-
-
-
+    Mars.scale.multiplyScalar(2 / 5)
+    objectsPlanets.push(Mars);
 
 
     //Saturn
@@ -119,22 +114,22 @@ function creaPlanets() {
     Saturn.position.y = -1
     Saturn.name = "Saturn";
 
-    var radSaturn = 0.5 ;
-    var mesh	= THREEx.Planets.createSaturn(radSaturn )
-    mesh.receiveShadow	= true
-    mesh.castShadow		= true
-    mesh.geometry.radius = radSaturn ;
+    var radSaturn = 0.5;
+    var mesh = THREEx.Planets.createSaturn(radSaturn)
+    mesh.receiveShadow = true
+    mesh.castShadow = true
+    mesh.geometry.radius = radSaturn;
     Saturn.add(mesh)
 
-    var radRingSaturn = 0.55 ;
-    var ring	= THREEx.Planets.createSaturnRing(radRingSaturn)
-    ring.receiveShadow	= true
-    ring.castShadow		= true
-    ring.geometry.radius = radRingSaturn ;
+    var radRingSaturn = 0.55;
+    var ring = THREEx.Planets.createSaturnRing(radRingSaturn)
+    ring.receiveShadow = true
+    ring.castShadow = true
+    ring.geometry.radius = radRingSaturn;
     Saturn.add(ring)
 
 
-    objectsPlanets.push( Saturn );
+    objectsPlanets.push(Saturn);
 
 
     //Uranus
@@ -145,26 +140,26 @@ function creaPlanets() {
     Uranus.name = "Uranus";
 
 
-    var radUranus = 0.50 ;
-    var mesh	= THREEx.Planets.createUranus(radUranus)
-    mesh.receiveShadow	= true
-    mesh.castShadow		= true
-    mesh.geometry.radius =  radUranus ;
+    var radUranus = 0.50;
+    var mesh = THREEx.Planets.createUranus(radUranus)
+    mesh.receiveShadow = true
+    mesh.castShadow = true
+    mesh.geometry.radius = radUranus;
     Uranus.add(mesh)
 
-    var radRingUranus = 0.50 ;
+    var radRingUranus = 0.50;
     var ring = THREEx.Planets.createUranusRing(radRingUranus)
-    ring.receiveShadow	= true
-    ring.castShadow		= true
-    ring.geometry.radius = radRingUranus ;
+    ring.receiveShadow = true
+    ring.castShadow = true
+    ring.geometry.radius = radRingUranus;
     Uranus.add(ring)
 
-    objectsPlanets.push( Uranus );
+    objectsPlanets.push(Uranus);
 
 
     //Ajout de toutes les planets a la scene
-    for ( var i = 0; i < objectsPlanets.length  ; i++ ) {
-        scene.add(objectsPlanets[ i ]);
+    for (var i = 0; i < objectsPlanets.length; i++) {
+        scene.add(objectsPlanets[i]);
         console.log(" j'ajoute a la scene la planete : " + objectsPlanets[i].name)
     }
 
@@ -173,60 +168,58 @@ function creaPlanets() {
 function creaEarth() {
 
 
-
-        console.log(" je suis rentrer dans le if ")
+    console.log(" je suis rentrer dans le if ")
 
     // containerEarth
     var Earth = new THREE.Group();
-    Earth.position.z = 0 ;  //The X axis is red. The Y axis is green. The Z axis is blue.
+    Earth.position.z = 0;  //The X axis is red. The Y axis is green. The Z axis is blue.
     Earth.name = "Earth";
 
-    var radEarth = 0.5 ;
-    var earthMesh	= THREEx.Planets.createEarth(radEarth)
-    earthMesh.receiveShadow	= true
-    earthMesh.castShadow	= true
-    earthMesh.geometry.radius = radEarth ;
+    var radEarth = 0.5;
+    var earthMesh = THREEx.Planets.createEarth(radEarth)
+    earthMesh.receiveShadow = true
+    earthMesh.castShadow = true
+    earthMesh.geometry.radius = radEarth;
     Earth.add(earthMesh)
 
-    var radAtmosphere = 0.5 ;
-    var geometry	= new THREE.SphereGeometry(radAtmosphere, 32, 32)
-    var material	= THREEx.createAtmosphereMaterial()
+    var radAtmosphere = 0.5;
+    var geometry = new THREE.SphereGeometry(radAtmosphere, 32, 32)
+    var material = THREEx.createAtmosphereMaterial()
     material.uniforms.glowColor.value.set(0x00b3ff)
-    material.uniforms.coeficient.value	= 0.8
-    material.uniforms.power.value		= 2.0
-    var mesh= new THREE.Mesh(geometry, material );
+    material.uniforms.coeficient.value = 0.8
+    material.uniforms.power.value = 2.0
+    var mesh = new THREE.Mesh(geometry, material);
     mesh.scale.multiplyScalar(1.01);
-    mesh.geometry.radius = radAtmosphere ;
-    Earth.add( mesh );
+    mesh.geometry.radius = radAtmosphere;
+    Earth.add(mesh);
 
-    var radAtmosphere = 0.5 ;
-    var geometry	= new THREE.SphereGeometry(radAtmosphere, 32, 32)
-    var material	= THREEx.createAtmosphereMaterial()
-    material.side	= THREE.BackSide
+    var radAtmosphere = 0.5;
+    var geometry = new THREE.SphereGeometry(radAtmosphere, 32, 32)
+    var material = THREEx.createAtmosphereMaterial()
+    material.side = THREE.BackSide
     material.uniforms.glowColor.value.set(0x00b3ff)
-    material.uniforms.coeficient.value	= 0.5
-    material.uniforms.power.value		= 4.0
-    var mesh	= new THREE.Mesh(geometry, material );
+    material.uniforms.coeficient.value = 0.5
+    material.uniforms.power.value = 4.0
+    var mesh = new THREE.Mesh(geometry, material);
     mesh.scale.multiplyScalar(1.15);
-    mesh.geometry.radius = radAtmosphere ;
-    Earth.add( mesh );
+    mesh.geometry.radius = radAtmosphere;
+    Earth.add(mesh);
     // new THREEx.addAtmosphereMaterial2DatGui(material, datGUI)
 
-    var radCloud  = 0.51 ;
-    var earthCloud	= THREEx.Planets.createEarthCloud(radCloud)
-    earthCloud.receiveShadow	= true
-    earthCloud.castShadow	= true
-    earthCloud.geometry.radius = radCloud ;
-    onRenderFcts.push(function(delta, now){
+    var radCloud = 0.51;
+    var earthCloud = THREEx.Planets.createEarthCloud(radCloud)
+    earthCloud.receiveShadow = true
+    earthCloud.castShadow = true
+    earthCloud.geometry.radius = radCloud;
+    onRenderFcts.push(function (delta, now) {
         earthCloud.rotation.y += 8 * delta;
     })
     Earth.add(earthCloud)
-    Earth.scale.multiplyScalar(5/5)
+    Earth.scale.multiplyScalar(5 / 5)
 
 
     //objectsPlanets.push( Earth );
     scene.add(Earth);
-
 
 
 }

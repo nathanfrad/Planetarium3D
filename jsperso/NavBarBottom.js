@@ -1,10 +1,9 @@
+function addBtnAccueil() {
 
-function addBtnAccueil () {
+    var array1 = ['fas fa-search fa-2x', 'fas fa-cog fa-2x', 'fas fa-eye fa-2x', 'fas fa-calendar-check fa-2x', 'fas fa-compass fa-2x'];
+    var i = 0;
 
-    var array1 = [ 'fas fa-search fa-2x', 'fas fa-cog fa-2x' ,'fas fa-eye fa-2x'  , 'fas fa-calendar-check fa-2x' ,'fas fa-compass fa-2x' ];
-    var i = 0 ;
-
-    array1.forEach(function(element) {
+    array1.forEach(function (element) {
         var divBtn = document.getElementById("btn-navigation");
         var newBtn = document.createElement("BUTTON");
         var newIcone = document.createElement("I");
@@ -14,45 +13,43 @@ function addBtnAccueil () {
         divBtn.getElementsByTagName("I")[i].className = element;
 
 
-
-        if(i == 0 ){
+        if (i == 0) {
             divBtn.getElementsByTagName("BUTTON")[i].id = "btnRecherche";
         }
-        if(i == 3 ){
+        if (i == 3) {
             divBtn.getElementsByTagName("BUTTON")[i].id = "btnAgenda";
         }
 
-        if(i == 4 ){
+        if (i == 4) {
             divBtn.getElementsByTagName("BUTTON")[i].id = "btnLocalisation";
         }
 
-        i = ++i ;
+        i = ++i;
     });
 
 }
 
-function addBtnPlanet () {
+function addBtnPlanet() {
 
 
     var divBtn = document.getElementById("btn-navigation");
     document.getElementById("btnLocalisation").id = "btnBack";
-    divBtn.getElementsByTagName("I")[4].className = "fas fa-parachute-box fa-2x" ;
+    divBtn.getElementsByTagName("I")[4].className = "fas fa-parachute-box fa-2x";
 
 
     var btnBack = document.getElementById("btnBack");
-    btnBack.onclick = function() {
+    btnBack.onclick = function () {
         switchValue("Back");
 
     }
 
 }
 
-function addBtnAccueilBack () {
+function addBtnAccueilBack() {
 
     var divBtn = document.getElementById("btn-navigation");
     document.getElementById("btnBack").id = "btnLocalisation";
-    divBtn.getElementsByTagName("I")[4].className = "fas fa-compass fa-2x" ;
-
+    divBtn.getElementsByTagName("I")[4].className = "fas fa-compass fa-2x";
 
 
 }
@@ -60,7 +57,7 @@ function addBtnAccueilBack () {
 function fadeOut(element) {
     var op = 1;  // initial opacity
     var timer = setInterval(function () {
-        if (op <= 0.1){
+        if (op <= 0.1) {
             clearInterval(timer);
             element.style.display = 'none';
         }
@@ -73,7 +70,7 @@ function fadeOut(element) {
 function fadeIn(element) {
     var op = 0.1;  // initial opacity
     var timer = setInterval(function () {
-        if (op >= 0.9){
+        if (op >= 0.9) {
             clearInterval(timer);
         }
         element.style.opacity = op;
@@ -99,7 +96,6 @@ function addBtnPhoto() {
     divBtnPhoto.appendChild(newBtn);
     divBtnPhoto.appendChild(newBtn);
     divBtn.appendChild(divBtnPhoto);
-
 
 
     // btn gallerie photo
@@ -136,38 +132,35 @@ function deleteBtnPhoto() {
     var divBtnPhoto = document.getElementById('btn-photo');
     fadeOut(divBtnPhoto);
 
-    setTimeout( function() {
+    setTimeout(function () {
         divBtnPhoto.remove()
-    } , 3000 )
+    }, 3000)
 
 }
 
 function AddInputAgenda() {
 
-    if ( !document.getElementById('divBtnAgenda') && !document.getElementById('btn-photo')) {
+    if (!document.getElementById('divBtnAgenda') && !document.getElementById('btn-photo')) {
 
 
+        var divBtn = document.getElementById("btn")
+        var divBtnAgenda = document.createElement("div");
 
-    var divBtn = document.getElementById("btn")
-    var divBtnAgenda = document.createElement("div");
 
+        var codeBlock = '<input  type="time" value="22:53:05" > <input type="date" value="2017-06-01" >';
 
-    var codeBlock = '<input  type="time" value="22:53:05" > <input type="date" value="2017-06-01" >';
+        // Inserting HTML code inside wrapper element
+        divBtnAgenda.innerHTML = codeBlock;
 
-    // Inserting HTML code inside wrapper element
-    divBtnAgenda.innerHTML = codeBlock;
+        // ajoute le nouvel élément créé et son contenu dans le DOM
+        var currentDiv = document.getElementById("btn-navigation");
+        divBtn.insertBefore(divBtnAgenda, currentDiv);
 
-    // ajoute le nouvel élément créé et son contenu dans le DOM
-    var currentDiv = document.getElementById("btn-navigation");
-    divBtn.insertBefore(divBtnAgenda, currentDiv);
-
-    divBtnAgenda.id = "divBtnAgenda";
+        divBtnAgenda.id = "divBtnAgenda";
 
     } else {
         document.getElementById('divBtnAgenda').remove()
     }
-
-
 }
 
 

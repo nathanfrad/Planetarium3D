@@ -1,16 +1,23 @@
+.visible {
+    display: flex ;
+}
+
+.novisible {
+    display: none !important
+
+}
 
 body {
     margin: 0px;
     background-color: #000000;
     overflow: hidden;
 
-
 }
 
 #btn {
     height: 35%;
     width: 100%;
-    position: absolute ;
+    position: absolute;
     bottom: 0px;
     display: flex;
 
@@ -20,112 +27,102 @@ body {
 }
 
 #btn div {
-    padding : 5px ;
+    padding: 5px;
 }
 
 #divBtnAgenda {
     display: flex;
     justify-content: space-around;
-    margin-bottom : 0px ;
-    font-size: 20px  ;
+    margin-bottom: 0px;
+    font-size: 20px;
     color: white;
 }
 
 #divBtnAgenda input {
     color: #D4C3B5;
-    border-color :  #D4C3B5;
+    border-color: #D4C3B5;
     font-size: 17px;
     border-radius: 10px 120px / 120px;
     background-color: rgba(0, 0, 0, 0.7);
     padding: 5px
 }
 
-
-
-
-
-#btn-photo
-{
+#btn-photo {
 
     display: flex;
     justify-content: space-around;
-    margin-bottom : 0px ;
-    font-size: 20px  ;
+    margin-bottom: 0px;
+    font-size: 20px;
     opacity: 0;
 
-
 }
+
 #btn-photo button {
-     color: #D4C3B5;
-     border-color :  #D4C3B5;
-     font-size: 17px;
-     border-radius: 10px 120px / 120px;
-     background-color: rgba(0, 0, 0, 0.7);
-     padding: 5px
- }
+    color: #D4C3B5;
+    border-color: #D4C3B5;
+    font-size: 17px;
+    border-radius: 10px 120px / 120px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 5px
+}
 
-
-
-#btn-navigation
-{
+#btn-navigation {
 
     display: flex;
     justify-content: space-around;
 
-
 }
+
 #btn-navigation button {
     color: #D4C3B5;
     background: transparent;
-    border : none ;
+    border: none;
     font-size: 15px;
 
 }
 
-#recherche  {
+#listPlanete {
     display: flex;
     flex-direction: column;
     width: 100%;
     height: 100%;
     background: #262e39;
     color: #D4C3B5;
-    font-size: 20px ;
+    font-size: 20px;
 
 }
 
-#recherche h3 {
+#listPlanete h3 {
 
     background: black;
     text-align: left;
     padding: 5px;
-    margin:0px;
-
+    margin: 0px;
 
 }
 
-#recherche ul {
+#listPlanete ul {
     list-style-type: none;
     margin: 0;
     padding: 5px;
 
-
 }
-#recherche ul li {
+
+#listPlanete ul li {
     display: flex;
     justify-content: space-between;
     padding: 2px;
     text-align: left;
 }
-#recherche ul li a  {
+
+#listPlanete ul li a {
     flex: 1;
-    display: inline;
 }
 
-#recherche ul li > * {
+#listPlanete ul li > * {
 
     padding: 5px;
 }
-
 
 /* The Modal (background) */
 .modal {
@@ -137,8 +134,8 @@ body {
     width: 100%; /* Full width */
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
     -webkit-animation-name: fadeIn; /* Fade in the background */
     -webkit-animation-duration: 0.4s;
     animation-name: fadeIn;
@@ -180,31 +177,51 @@ body {
 }
 
 .modal-header input {
-    background : transparent;
-    border : none ;
-    font-size: 20px ;
+    background: transparent;
+    border: none;
+    font-size: 20px;
 
 }
 
 /* Add Animation */
 @-webkit-keyframes slideIn {
-    from {bottom: -300px; opacity: 0}
-    to {bottom: 0; opacity: 1}
+    from {
+        bottom: -300px;
+        opacity: 0
+    }
+    to {
+        bottom: 0;
+        opacity: 1
+    }
 }
 
 @keyframes slideIn {
-    from {bottom: -300px; opacity: 0}
-    to {bottom: 0; opacity: 1}
+    from {
+        bottom: -300px;
+        opacity: 0
+    }
+    to {
+        bottom: 0;
+        opacity: 1
+    }
 }
 
 @-webkit-keyframes fadeIn {
-    from {opacity: 0}
-    to {opacity: 1}
+    from {
+        opacity: 0
+    }
+    to {
+        opacity: 1
+    }
 }
 
 @keyframes fadeIn {
-    from {opacity: 0}
-    to {opacity: 1}
+    from {
+        opacity: 0
+    }
+    to {
+        opacity: 1
+    }
 }
 
 
