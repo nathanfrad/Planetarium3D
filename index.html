@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html >
+	<head>
+		<meta charset="UTF-8">
+		<title>Three.js template</title> 		
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css"
+			  integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+	</head>
+
+	<body>
+		<canvas id="canvas"></canvas>
+
+        <div id="btn">
+
+            <div id="btn-navigation">
+            </div>
+
+        </div>
+
+
+        <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">&times;</span>
+                    <h3> <i class="fas fa-search fa-1x" aria-hidden="true"></i> <input id="search" type="search" placeholder="Recherche" />
+                    </h3>
+                </div>
+
+                <div id="listPlanete">
+
+                    <h3> Planètes </h3>
+                    <ul>
+                        <li class="">
+                            <i class="fas fa-globe"></i>
+                            <a>Moon</a>
+                            <i class="fas fa-info"></i>
+                            <i class="fas fa-space-shuttle" data-fa-transform="rotate-100" onclick='switchValue("Moon");'></i>
+                        </li>
+                        <li class="">
+                            <i class="fas fa-globe"></i>
+                            <a>Saturn</a>
+                            <i class="fas fa-info"></i>
+                            <i class="fas fa-space-shuttle" data-fa-transform="rotate-100" onclick='switchValue("Saturn");'></i>
+                        </li>
+                        <li class="">
+                            <i class="fas fa-globe"></i>
+                            <a>Uranus</a>
+                            <i class="fas fa-info"></i>
+                            <i class="fas fa-space-shuttle" data-fa-transform="rotate-100" onclick='switchValue("Uranus");'></i>
+                        </li>
+                        <li class="">
+                            <i class="fas fa-globe"></i>
+                            <a>Jupiter</a>
+                            <i class="fas fa-info"></i>
+                            <i class="fas fa-space-shuttle" data-fa-transform="rotate-100"
+                               onclick='switchValue("Jupiter");'></i>
+                        </li>
+                        <li class="">
+                            <i class="fas fa-globe"></i>
+                            <a>Mars</a>
+                            <i class="fas fa-info"></i>
+                            <i class="fas fa-space-shuttle" data-fa-transform="rotate-100" onclick='switchValue("Mars");'></i>
+                        </li>
+                        <li class="">
+                            <i class="fas fa-globe"></i>
+                            <a>Mercury</a>
+                            <i class="fas fa-info"></i>
+                            <i class="fas fa-space-shuttle" data-fa-transform="rotate-100"
+                               onclick='switchValue("Mercury");'></i>
+                        </li>
+                        <li class="">
+                            <i class="fas fa-globe"></i>
+                            <a>Venus</a>
+                            <i class="fas fa-info"></i>
+                            <i class="fas fa-space-shuttle" data-fa-transform="rotate-100" onclick='switchValue("Venus");'></i>
+                        </li>
+                        <li class="">
+                            <i class="fas fa-globe"></i>
+                            <a>Neptune</a>
+                            <i class="fas fa-info"></i>
+                            <i class="fas fa-space-shuttle" data-fa-transform="rotate-100"
+                               onclick='switchValue("Neptune");'></i>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+        </div>
+
+
+
+        <script src='./js/libs/three.min.js'></script>
+
+		<!-- <script src="js/controls/DeviceOrientationControls.js"></script> -->
+		<script src="js/libs/controls/OrbitControls.js"></script>
+        <script src="js/libs/tween.min.js"></script> <!--  changement d'orbite  smooth -->
+        <script src="js/Detector.js"></script>
+
+
+		<script src='js/libs/threex.planets/threex.planets.js'></script>
+		<script src='js/libs/threex.planets/threex.atmospherematerial.js'></script>
+		
+		<script src="js/sceneSubjects/Light.js"></script>
+		<script src="js/sceneSubjects/SceneSubject.js"></script>
+		<script src="js/sceneSubjects/SkyStars.js"></script>
+        <script src="js/sceneSubjects/Horizon.js"></script>
+
+		<script src="js/sceneActions/NavBarBottom.js"></script>
+        <script src="js/sceneActions/Raycaster.js"></script>
+        <script src="js/sceneActions/Navigation.js"></script>
+        <script src="js/sceneActions/search.js"></script>
+
+		<script src='js/sceneSubjects/Planets.js'></script>
+        <script src='js/sceneSubjects/Earth.js'></script>
+		
+		<script src="js/SceneManager.js"></script>    
+		<script src="js/main.js"></script>
+
+
+
+
+	</body>
+</html>
