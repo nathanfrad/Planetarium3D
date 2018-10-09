@@ -65,8 +65,6 @@ function init( objectsPlanets , renderer ,camera,  modal , scene , controls ) {
     document.getElementById("btn-navigation").addEventListener('mouseup', mouseUp, false);
 
 
-    const btnRecherche = document.getElementById("btnRecherche") ;
-    btnRecherche.addEventListener('mousedown', BtnRecherche , false);
 
     // Get the <span> element that closes the modal
     const closeModal = document.getElementsByClassName("close")[0];

@@ -18,7 +18,7 @@ function Planets(scene, objectsPlanets) {
     Moon.scale.multiplyScalar(2 / 5)
     objectsPlanets.push(Moon);
 
-    //Jupiter
+    //Neptune
     var Neptune = new THREE.Group();
     Neptune.position.z = -7
     Neptune.position.x = -4

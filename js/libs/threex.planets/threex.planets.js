@@ -1,6 +1,10 @@
 var THREEx = THREEx || {}
 
+console.log( " THREEx   ========  " +  Object.values(THREEx))
+
 THREEx.Planets	= {}
+
+console.log( " THREEx   ========  " +  Object.values(THREEx.Planets))
 
 THREEx.Planets.baseURL	= 'js/libs/threex.planets/'
 

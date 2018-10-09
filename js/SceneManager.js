@@ -27,6 +27,7 @@ function SceneManager(canvas) {
 
     function control() {
         const controls = new THREE.OrbitControls(camera, renderer.domElement);
+
         //controls.autoRotate = true ;
         controls.autoRotateSpeed = 0.02;
         controls.target.z = 0

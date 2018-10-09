@@ -4,7 +4,6 @@ function Light(scene) {
 
     var light = new THREE.DirectionalLight(0xffffff, 1)
     light.position.set(5, 5, 5)
-    scene.add(light)
     light.castShadow = true
     light.shadow.camera.near = 0.01
     light.shadow.camera.far = 15
