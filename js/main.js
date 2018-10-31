@@ -63,6 +63,7 @@ function init( objectsPlanets , renderer ,camera,  modal , scene , controls ) {
     document.getElementById("btnAgenda").addEventListener('click', AddInputAgenda, false);
     document.getElementById("btn-navigation").addEventListener('mousedown', mouseDown, false);
     document.getElementById("btn-navigation").addEventListener('mouseup', mouseUp, false);
+    document.getElementById("btnRecherche").addEventListener('mouseup', BtnRecherche, false);
 
 
 

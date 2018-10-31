@@ -174,7 +174,6 @@ function mouseUp(event) {
 
 // When the user clicks the button, open the modal
 function BtnRecherche() {
-    console.log("coucou")
     modal.style.display = "block";
 }
 
