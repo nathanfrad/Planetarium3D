@@ -87,7 +87,7 @@ function addBtnPhoto() {
 
     // btn nouvelle photo
     var newlink = document.createElement('a');
-    newlink.setAttribute('href', 'fb://ohmygoalfr.kelinetwork/?__tn__=<-R&eid=ARAkM2BZiZAV5vjo981ZS66nT253Go68dawGtWZ1GR7OGxSgTG_IjO0MTj3j4NWhy32Hqqqh0cFoJ5C0&hc_ref=ARQiuuIAFntoALE0lEtV0Y68egdFywBz3X2LYC3Jv8vnmfB4LL8ztiHk7fXPqiMG3Vo&__xts__[0]=68.ARDT4kKVH3CVWDZKyVm5hj9dMBf5J3uwCJWxxvhF4aBZRc2m9fjoRY2DS81ZUTlIYR9fz8c2uU40rifQqBC7YbklqC6T_nKQUwkwABv0nHIiOuVlv5XNaGEjYI-cbpb5OpJQd13h3vIJcFge5btY44Cap4mTBK_kLFRvQaNEoAkQ9SCpLT47RNUUcTJTPb-oHCvRvsKI1uUplxQOI-xEyeLn4QZazPwZWRHorQZMAezsM5D7EglUR-EkplEGDrFl4fI');
+    newlink.setAttribute('href', 'openstars://');
 
     var newBtn = document.createElement("BUTTON");
     var newtext = document.createTextNode("Nouvelle Photo ");
