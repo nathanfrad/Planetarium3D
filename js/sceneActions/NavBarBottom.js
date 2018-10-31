@@ -87,7 +87,7 @@ function addBtnPhoto() {
 
     // btn nouvelle photo
     var newlink = document.createElement('a');
-    newlink.setAttribute('href', 'openstars://');
+    newlink.setAttribute('href', 'OpenStars://');
 
     var newBtn = document.createElement("BUTTON");
     var newtext = document.createTextNode("Nouvelle Photo ");
