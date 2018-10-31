@@ -27,6 +27,7 @@ function addBtnAccueil() {
         i = ++i;
     });
 
+
 }
 
 function addBtnPlanet() {
@@ -85,20 +86,34 @@ function addBtnPhoto() {
     var divBtnPhoto = document.createElement("div");
 
     // btn nouvelle photo
+    var newlink = document.createElement('a');
+    newlink.setAttribute('href', 'OpenStars://');
+
     var newBtn = document.createElement("BUTTON");
     var newtext = document.createTextNode("Nouvelle Photo ");
     var newIcone = document.createElement("I");
+   // var href = document.setAttribute('href', "http://google.com");
 
 
     newBtn.appendChild(newtext);
     newBtn.appendChild(newIcone);
+    //newBtn.appendChild(href);
 
-    divBtnPhoto.appendChild(newBtn);
-    divBtnPhoto.appendChild(newBtn);
+    newlink.appendChild(newBtn);
+
+
+
+    divBtnPhoto.appendChild(newlink);
+    divBtnPhoto.appendChild(newlink);
     divBtn.appendChild(divBtnPhoto);
 
+    divBtnPhoto.href = function () {
 
-    // btn gallerie photo
+
+    }
+
+
+        // btn gallerie photo
     var newBtn = document.createElement("BUTTON");
     var newtext = document.createTextNode("Galerie Photo ");
     var newIcone = document.createElement("I");
