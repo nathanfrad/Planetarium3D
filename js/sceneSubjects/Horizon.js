@@ -12,7 +12,7 @@ function Horizon(scene) {
 
 
     //The X axis is red. The Y axis is green. The Z axis is blue.
-    scene.add(new THREE.AxesHelper(8000));
+    //scene.add(new THREE.AxesHelper(8000));
 
 
     this.update = function(time) {
